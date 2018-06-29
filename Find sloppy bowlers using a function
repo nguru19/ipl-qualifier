@@ -1,0 +1,13 @@
+def sloppy_bowlers(dictn):
+    kkr = dictn['KKR']['Extra runs']
+    mi = dictn['MI']['Extra runs']
+    
+    if kkr > mi:
+        sloppy = 'KKR'
+    elif mi > kkr:
+        sloppy = 'MI'
+    else:
+        sloppy ='Both team bowlers equally sloppy'
+    return sloppy
+        
+print(sloppy_bowlers(qualifier_2))
